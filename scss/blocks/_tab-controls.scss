@@ -4,6 +4,10 @@
     align-items: center;
     border-radius: 44px;
     background: #EEE;
+
+    @include mobile () {
+        display: none;
+    }
 }
 
 .tab-controls__btn {
@@ -28,5 +32,9 @@
 
     &--active {
         background-color: #fff;
+
+        &:hover {
+            background-color: #fff;
+        }
     }
 }
